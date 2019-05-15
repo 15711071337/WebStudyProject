@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Html5中全局的属性</title>
+</head>
+<!--1.contentEditable属性   如果添加了这个属性，为true的话，选中的内容是可以编辑的  fasle不可以编辑
+2.designMode属性
+描述：用来指定整个页面是否可编辑
+作用：
+1.当页面调用on时候，页面上所有添加contentEditable属性为true的元素都变成可编辑状态，为false的元素还是不能编辑，
+当页面调用off的时候，页面上所有添加contentEditable属性为true的元素可以继续编辑，为false的元素不能编辑；默认不添加的情况，不受影响
+2.只能在Js被编辑修改 ，有两个值，on（可编辑）和off（不可编辑）
+js调用：
+document.designMode = "on";
+支持：
+IE8出于安全考虑，不允许使用designMode属性让页面进入编辑状态
+IE9允许使用designMode属性让页面进入编辑状态
+代码测试：
+<script>
+    document.designMode="off";
+</script>
+    <p contenteditable="true">默认可以编辑</p>
+    <p >默认不可以编辑</p>
+    <p contenteditable="false">默认不可以编辑，js中添加属性，让其可以编辑</p>
+
+3.hidden属性
+  描述：显示和隐藏控件，true为隐藏，false为显示
+ js代码测试：
+  <p id="phidden" contenteditable="false"  hidden>默认不可以编辑，js中添加属性，让其可以编辑</p>
+  <script>
+        var p=document.getElementById("phidden");
+        p.removeAttribute("hidden");
+    </script>
+
+
+
+4.spellcheck属性
+  检测是否有错误的属性   true为检查,比如填入的有错误，那么会爆红线   false为不检查，不做任何处理
+  测试代码：
+  <p  contenteditable="true"  spellcheck="true">检查一下有问题</p>
+   <p  contenteditable="true"  spellcheck="false">不检查</p>
+
+5.tabindex属性
+  这个属性是按键按键Tab的时候，按下标去选择
+  默认下标从1开始，如果当前页面中有可以编辑的控件，那么依次会被选中
+  代码测试
+    测试tabindex属性
+    <p tabindex="1">测试table属性，按下默认选中</p>
+    <p tabindex="3">测试table属性，按下默认选中2</p>
+    <p tabindex="2">测试table属性，按下默认选中1</p>
+    <p tabindex="4">测试table属性，按下默认选中3</p>
+-->
+<script>
+    document.designMode="off";
+
+</script>
+
+<body>
+
+
+   <!-- 测试designMode属性-->
+    <p contenteditable="true">默认可以编辑</p>
+    <p >默认不可以编辑</p>
+    <p i contenteditable="false"  >默认不可以编辑，js中添加属性，让其可以编辑</p>
+
+   <br>
+   <hr>
+   <br>
+
+    <!--测试hidden属性-->
+    <p id="phidden" contenteditable="false"  hidden>默认不可以编辑，js中添加属性，让其可以编辑</p>
+    <script>
+        var p=document.getElementById("phidden");
+        p.removeAttribute("hidden");
+    </script>
+
+   <br>
+   <hr>
+   <br>
+
+    <!--测试spellcheck属性-->
+   <p  contenteditable="true"  spellcheck="true">检查一下有问题</p>
+   <p  contenteditable="true"  spellcheck="false">不检查</p>
+
+   <br>
+   <hr>
+   <br>
+
+   <!--测试tabindex属性-->
+   <p tabindex="1">测试table属性，按下默认选中</p>
+   <p tabindex="3">测试table属性，按下默认选中2</p>
+   <p tabindex="2">测试table属性，按下默认选中1</p>
+   <p tabindex="4">测试table属性，按下默认选中3</p>
+
+
+</body>
+</html>
