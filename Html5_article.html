@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>article元素的使用</title>
+</head>
+<body>
+<!--Article元素代表文档、页面或者应用程序中独立的、完整的、可以独自被外部引用的内容。
+Article允许被嵌套、也可以表示插件。-->
+
+<!--测试Article允许被嵌套-->
+<article>
+    <header>
+        <ul>
+            <li><a href="#">标题</a></li>
+            <li><a href="#">内容</a></li>
+            <li><a href="#">文章</a></li>
+        </ul>
+    </header>
+   <article>
+       <header>
+           <ul>
+               <li><a href="#">嵌套的article</a></li>
+           </ul>
+       </header>
+       <p>
+           嵌套的内容
+       </p>
+       <footer>
+           <small>嵌套的版权问题</small>
+       </footer>
+   </article>
+    <footer>
+        <small>版权</small>
+    </footer>
+</article>
+
+
+
+<!--测试插件   插件重点的标签embed-->
+<article>
+    <object>
+        <embed src="#" width="600" height="500">
+    </object>
+</article>
+</body>
+</html>
