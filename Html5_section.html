@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>section元素</title>
+</head>
+<!--Section元素用于对网站或应用程序中页面上的内容进行分开，它必须有标题，如果需要定义样式的话，那么必须使用div元素。-->
+<body>
+<!--测试加样式 和使用section-->
+<article>
+    <header>
+        <ul>
+            <li><a href="#">article头部分</a></li>
+        </ul>
+    </header>
+   <!-- 其中一个模块： 1  添加样式，其他的不添加-->
+    <section>
+       <div id="sectionfont" >
+           <header>
+               <h1>第1个模块的标题，必须有标题</h1>
+           </header>
+           <p>第1个模块的标题内容</p>
+           <footer>
+               <small>第1个模块的版权</small>
+               <hr>
+           </footer>
+       </div>
+    </section>
+    <script>
+        var section=document.getElementById("sectionfont");
+        section.style.fontSize="20px";
+        section.style.color="red";
+    </script>
+  <!--  其中一个模块： 2-->
+    <section>
+        <header>
+            <h1>第2个模块的标题，必须有标题</h1>
+        </header>
+        <p>第2个模块的标题内容</p>
+        <footer>
+            <small>第2个模块的版权</small>
+            <hr>
+        </footer>
+    </section>
+  <!--  其中一个模块： 3-->
+
+    <section>
+        <header>
+            <h1>第3个模块的标题，必须有标题</h1>
+        </header>
+        <p>第3个模块的标题内容</p>
+        <footer>
+            <small>第3个模块的版权</small>
+            <hr>
+        </footer>
+    </section>
+</article>
+
+</body>
+</html>
