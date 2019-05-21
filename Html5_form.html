@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>form表单form的属性</title>
+</head>
+<!--Html5中，可以把他们书写在页面上任何地方，
+然后为该元素指定一个form属性，
+属性值为该表单的id，
+这样就可以声明该元素从属于指定的表单。-->
+<body>
+
+<!--之前的写法-->
+<form id="form1">
+    <button type="submit">btn1</button>
+</form>
+
+<!--现在的写法   在form里面 在form外面 都能提交表单-->
+<form id="form2">
+    <button type="submit" form="form2">btn1</button>
+</form>
+
+<button type="submit" form="form2">btn2</button>
+
+
+</body>
+</html>
