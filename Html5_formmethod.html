@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>formmethod属性</title>
+</head>
+<!--Html5中，可以使用formthod属性来对每一个表单元素分别指定不同的提交方法-->
+<body>
+
+<!--以前的写法-->
+<form action="提交的地址" method="get">
+    <button type="submit">提交</button>
+</form>
+
+<!--现在的写法-->
+<form>
+    <button type="submit" formaction="第1个的提交地址" formmethod="get">btn1</button>
+    <button type="submit" formaction="第2个的提交地址" formmethod="post">btn2</button>
+</form>
+
+</body>
+</html>
