@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>formaction属性</title>
+</head>
+<!--Html5中，
+可以为所有的提交按钮，
+增加不同的formaction属性，
+使他点击不用的按钮时可以将表单提交到不同的页面-->。
+<body>
+
+<!--原来的写法-->
+<form action="加上地址">
+    <button type="submit">提交</button>
+</form>
+
+<!--现在 写法-->
+<form >
+    <button type="submit" formaction="第1个按钮的提交地址">btn1</button>
+    <button type="submit" formaction="第2个按钮的提交地址">btn2</button>
+    <button type="submit" formaction="第3个按钮的提交地址">btn3</button>
+</form>
+
+</body>
+</html>
