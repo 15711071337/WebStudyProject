@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>fromtarget属性</title>
+</head>
+<!--在Html5中，可以对多个提交按钮分别使用formtarget属性来指定提交后在何处打开所需要加载的页面。-->
+<body>
+
+<form>
+    <input type="submit" formtarget="_blank" formaction="https://www.baidu.com/">   <!--在新页面打开-->
+    <input type="submit" formtarget="_parent" formaction="https://www.baidu.com/">   <!--在当前页面中打开-->
+    <input type="submit" formtarget="_self" formaction="https://www.baidu.com/">   <!--在当前页面中打开-->
+    <input type="submit" formtarget="_top" formaction="https://www.baidu.com/">   <!--在当前页面中打开-->
+</form>
+</body>
+</html>
