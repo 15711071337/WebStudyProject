@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>list属性</title>
+</head>
+<!--在Html5中，为单行文本框增加了一个list属性，该属性的值为某个datalist元素的id。
+Datalist元素也是Html5中新增的元素，该元素类似于选择框，
+当文本框获得焦点时以提示输入的方式显示。-->
+<body>
+    <form>
+        <input type="text" list="datalistid">
+        <datalist id="datalistid" style="display: none">
+            <option>Html</option>
+            <option>Android</option>
+            <option>ios</option>
+        </datalist>
+    </form>
+</body>
+</html>
